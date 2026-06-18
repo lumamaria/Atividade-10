@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas Melhoradas</title>
+</head>
+<body>
+    
+    <ul>
+        {% for item in disciplinas %}
+            <li>{{ item }}</li>
+
+        {% empty %}
+            <li>Nenhuma disciplina ofertada neste semestre.</li>
+            
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
