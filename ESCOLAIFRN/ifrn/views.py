@@ -29,15 +29,7 @@ def disciplinas(request):
 
 def autorizacao(request):
 
-    valor_Boler = True
-
-    contexto = {
-
-        'valor_Boler': valor_Boler,
-
-    }
-
-    return render(request, 'ifrn/autorizacao.html', contexto)
+    return render(request, 'ifrn/autorizacao.html', {'valor_Boler': True})
 
 
 def livraria(request):
