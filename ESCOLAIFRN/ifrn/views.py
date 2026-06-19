@@ -29,7 +29,7 @@ def disciplinas(request):
 
 def autorizacao(request):
 
-    return render(request, 'ifrn/autorizacao.html', {'valor_Boler': True})
+    return render(request, 'ifrn/autorizacao.html', {'valor_Boler':True})
 
 
 def livraria(request):
@@ -50,25 +50,12 @@ def livraria(request):
 
 def melhordisciplinas(request):
 
-    disciplinas = []
-
-    contexto = {
-
-        'disciplinas' : disciplinas,
-    }
-
-    return render(request, 'ifrn/discimelhoradas.html', contexto)
+    return render(request, 'ifrn/discimelhoradas.html',{'disciplinas':[]})
 
 
 def nivel(request):
 
-    nivel_prioridade = 1
-
-    contexto = {
-        'nivel_prioridade' : nivel_prioridade,
-    }
-
-    return render(request, 'ifrn/nivel.html', contexto)
+    return render(request, 'ifrn/nivel.html',{'nivel_prioridade' : 1})
 
 
 def lista(request):
@@ -127,10 +114,4 @@ def detalhes(request, id):
 
 def alerta(request):
 
-    mostrar_alerta = True
-
-    contexto = {
-        'mostrar_alerta': mostrar_alerta
-    }
-
-    return render(request, 'ifrn/alerta.html', contexto)
+    return render(request, 'ifrn/alerta.html',{'mostrar_alerta' : True})
