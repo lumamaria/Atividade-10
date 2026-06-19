@@ -4,15 +4,7 @@ from django.shortcuts import render
 
 def index(request):
 
-    nome_usuario = 'Estudante IFRN'
-
-    contexto = {
-
-        'nome_usuario' : nome_usuario,
-
-    }
-
-    return render(request, 'ifrn/usuario.html', contexto)
+    return render(request, 'ifrn/usuario.html', {'nome_usuario' : 'Estudante IFRN'})
 
 
 def disciplinas(request):
